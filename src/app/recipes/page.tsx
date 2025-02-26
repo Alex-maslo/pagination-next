@@ -1,12 +1,7 @@
 import React from "react";
-import Recipe from "@/components/Recipe";
 
 const RecipesPage = () => {
-  return (
-    <div className="p-5">
-      <Recipe />
-    </div>
-  );
+  return <div>RecipesPage</div>;
 };
 
 export default RecipesPage;
