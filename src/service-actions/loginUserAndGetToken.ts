@@ -14,7 +14,7 @@ export const loginUserAndGetToken = async () => {
     {
       username: "michaelw",
       password: "michaelwpass",
-      expiresInMins: 30,
+      expiresInMins: 60,
     },
   );
 

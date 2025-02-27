@@ -1,16 +1,6 @@
-import { cookies } from "next/headers";
-import { IUserWithTokens } from "@/models/IUserWithTokens";
+import { NextRequest, NextResponse } from "next/server";
 
-export const middleware = async () => {
-  const cookieStore = await cookies();
-  const value = cookieStore.get("user")?.value ?? "";
-
-  let user: IUserWithTokens | null = null;
-  try {
-    user = value ? JSON.parse(value) : null;
-  } catch (error) {
-    console.error("Помилка парсингу кукі user:", error);
-  }
-
-  console.log(user?.accessToken);
-};
+export async function middleware(request: NextRequest, response: NextResponse) {
+  // console.log(request);
+  // console.log(response);
+}
