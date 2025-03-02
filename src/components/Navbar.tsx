@@ -18,15 +18,17 @@ const Navbar = async () => {
       <div className="sm:flex sm:flex-row flex-col gap-3 justify-around navbar bg-neutral text-neutral-content">
         {isAuth ? (
           <>
-            <Link className="btn btn-ghost text-xl" href={"/"}>
-              Home
-            </Link>
-            <Link className="btn btn-ghost text-xl" href={"/recipes"}>
-              Recipes
-            </Link>
-            <Link className="btn btn-ghost  text-xl" href={"/users"}>
-              Users
-            </Link>
+            <div className="flex justify-between sm:w-5/12">
+              <Link className="btn btn-ghost text-xl" href={"/"}>
+                Home
+              </Link>
+              <Link className="btn btn-ghost text-xl" href={"/recipes"}>
+                Recipes
+              </Link>
+              <Link className="btn btn-ghost  text-xl" href={"/users"}>
+                Users
+              </Link>
+            </div>
 
             <h2 className="text-orange-500 font-bold  text-xl">
               {user.firstName} {user.lastName}

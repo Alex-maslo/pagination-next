@@ -7,7 +7,7 @@ const MainPage = async () => {
     body: JSON.stringify({
       username: "emilys",
       password: "emilyspass",
-      expiresInMins: 30, // optional, defaults to 60
+      expiresInMins: 60, // optional, defaults to 60
     }),
     credentials: "include", // Include cookies (e.g., accessToken) in the request
   });
